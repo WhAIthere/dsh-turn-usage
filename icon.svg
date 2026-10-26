@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="turn usage">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#3b82f6"/>
+  <path d="M20 19 L32 33 L44 19" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 33 L32 47" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M23 37 L41 37" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M23 44 L41 44" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Turn Usage",
+    "description": "Per-turn cost in CNY, with 本轮 / 今日 / 会话 totals above the composer; optionally folds in native DeepSeek search spend."
+  }
+}

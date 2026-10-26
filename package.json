@@ -1,0 +1,62 @@
+{
+  "name": "dsh-turn-usage",
+  "version": "0.1.0",
+  "description": "DSH Web 插件：按轮显示花费（¥），输入框上方常驻 本轮 / 今日 / 会话 合计；自带 Host 半边，从会话事件与账本预算长会话，并可选统计原生 DeepSeek 搜索费用。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "LICENSE",
+    "README.md",
+    "DESIGN.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek",
+    "harness",
+    "cost",
+    "usage",
+    "tokens",
+    "pricing"
+  ],
+  "author": "WhAIthere (泉) <https://github.com/WhAIthere>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhAIthere/dsh-turn-usage.git"
+  },
+  "homepage": "https://github.com/WhAIthere/dsh-turn-usage#readme",
+  "bugs": {
+    "url": "https://github.com/WhAIthere/dsh-turn-usage/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node tests/run_tests.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
